@@ -778,6 +778,45 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+}
+
+.risk-grid article {
+  min-width: 0;
+  border-top: 1px solid var(--line-strong);
+  padding-top: var(--space-4);
+}
+
+.risk-grid p {
+  margin-top: var(--space-3);
+  color: var(--muted);
+}
+
+.reference-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+  border-top: 1px solid var(--line-strong);
+  padding-top: var(--space-4);
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.reference-strip p {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.reference-strip a {
+  color: var(--blue);
+}
+
 .footer {
   border-top: 1px solid var(--line);
   background: var(--paper-strong);
@@ -817,7 +856,8 @@ h3 {
   .summary,
   .spec-list,
   .inline-specs,
-  .steps {
+  .steps,
+  .risk-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -858,6 +898,7 @@ h3 {
   .card-faces,
   .inline-specs,
   .steps,
+  .risk-grid,
   .admin-wire__top,
   .admin-wire__form,
   .admin-wire__table div,
